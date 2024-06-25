@@ -1,0 +1,45 @@
+[
+    {
+      "name": "name",
+      "type": "text",
+      "label": "Your Name",
+      "required": true
+    },
+    {
+      "name": "email",
+      "type": "email",
+      "label": "Your Email",
+      "required": true
+    },
+    {
+      "name": "phone",
+      "type": "tel",
+      "label": "Phone Number",
+      "required": true
+    },
+    {
+      "name": "eventDate",
+      "type": "date",
+      "label": "Date of Event",
+      "required": true
+    },
+    {
+      "name": "eventType",
+      "type": "select",
+      "label": "Type of Event",
+      "required": true,
+      "options": [
+        "Birthday Party",
+        "Wedding",
+        "Corporate Event",
+        "Other"
+      ]
+    },
+    {
+      "name": "message",
+      "type": "textarea",
+      "label": "Special Requests",
+      "required": false
+    }
+  ]
+  

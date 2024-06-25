@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import './globals.css'
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Tanner Cottle",
-  description: "Senior Software Engineer, Freelance Web Developer, Branding Consultant, Professional Bartender, and more.",
+  title: "Tanner Cottle | Software Engineer",
+  description: "Bringing over 7 years of experience in software development, focusing on scalable, high-performance applications.",
 };
 
 export default function RootLayout({

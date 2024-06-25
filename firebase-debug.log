@@ -1,0 +1,217 @@
+[debug] [2024-06-25T19:47:29.011Z] ----------------------------------------------------------------------
+[debug] [2024-06-25T19:47:29.013Z] Command:       /Users/tanner/.nvm/versions/node/v21.6.1/bin/node /Users/tanner/.nvm/versions/node/v21.6.1/bin/firebase deploy
+[debug] [2024-06-25T19:47:29.013Z] CLI Version:   13.11.4
+[debug] [2024-06-25T19:47:29.013Z] Platform:      darwin
+[debug] [2024-06-25T19:47:29.013Z] Node Version:  v21.6.1
+[debug] [2024-06-25T19:47:29.014Z] Time:          Tue Jun 25 2024 15:47:29 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-06-25T19:47:29.014Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-25T19:47:29.055Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-25T19:47:29.055Z] > authorizing via signed-in user (tcottle8@gmail.com)
+[debug] [2024-06-25T19:47:29.055Z] [iam] checking project bit-5ee21 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-25T19:47:29.056Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bit-5ee21:testIamPermissions [none]
+[debug] [2024-06-25T19:47:29.056Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bit-5ee21:testIamPermissions x-goog-quota-user=projects/bit-5ee21
+[debug] [2024-06-25T19:47:29.056Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bit-5ee21:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-25T19:47:29.411Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bit-5ee21:testIamPermissions 200
+[debug] [2024-06-25T19:47:29.411Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bit-5ee21:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-25T19:47:29.412Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bit-5ee21 [none]
+[debug] [2024-06-25T19:47:29.790Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bit-5ee21 200
+[debug] [2024-06-25T19:47:29.790Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bit-5ee21 {"projectId":"bit-5ee21","projectNumber":"578434836643","displayName":"8bit","name":"projects/bit-5ee21","resources":{"hostingSite":"bit-5ee21"},"state":"ACTIVE","etag":"1_c70bcea6-26dd-4132-afc5-a2f8577f6bc4"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-06-25T19:47:33.363Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bit-5ee21/sites/bit-5ee21 [none]
+[debug] [2024-06-25T19:47:33.722Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bit-5ee21/sites/bit-5ee21 200
+[debug] [2024-06-25T19:47:33.722Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bit-5ee21/sites/bit-5ee21 {"name":"projects/bit-5ee21/sites/bit-5ee21","defaultUrl":"https://bit-5ee21.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 15.0.0-rc.0
+
+[info]   - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/app/branding/page.tsx
+124:6  Warning: React Hook useEffect has a missing dependency: 'previousCombo'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/components/BrandGrid.jsx
+9:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info] Error: export const dynamic = "force-static"/export const revalidate not configured on route "/api/form" with "output: export". See more info here: https://nextjs.org/docs/advanced-features/static-html-export
+    at new eP (/Users/tanner/Developer/Software/portfolio/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:14:26218)
+    at 8022 (/Users/tanner/Developer/Software/portfolio/.next/server/app/api/form/route.js:4:433)
+    at t (/Users/tanner/Developer/Software/portfolio/.next/server/webpack-runtime.js:1:127)
+    at i (/Users/tanner/Developer/Software/portfolio/.next/server/app/api/form/route.js:15:222064)
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/api/form/route.js:15:222091
+    at t.X (/Users/tanner/Developer/Software/portfolio/.next/server/webpack-runtime.js:1:1191)
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/api/form/route.js:15:222077
+    at Object.<anonymous> (/Users/tanner/Developer/Software/portfolio/.next/server/app/api/form/route.js:15:222118)
+    at Module._compile (node:internal/modules/cjs/loader:1378:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1437:10)
+
+[info] 
+
+[info] > Build error occurred
+
+[info] Error: Failed to collect page data for /api/form
+    at /Users/tanner/Developer/Software/portfolio/node_modules/next/dist/build/utils.js:1274:15
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  type: 'Error'
+}
+
+[debug] [2024-06-25T19:47:40.514Z] Error: ENOENT: no such file or directory, open '/Users/tanner/Developer/Software/portfolio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-06-25T19:54:01.537Z] ----------------------------------------------------------------------
+[debug] [2024-06-25T19:54:01.540Z] Command:       /Users/tanner/.nvm/versions/node/v21.6.1/bin/node /Users/tanner/.nvm/versions/node/v21.6.1/bin/firebase deploy
+[debug] [2024-06-25T19:54:01.540Z] CLI Version:   13.11.4
+[debug] [2024-06-25T19:54:01.540Z] Platform:      darwin
+[debug] [2024-06-25T19:54:01.540Z] Node Version:  v21.6.1
+[debug] [2024-06-25T19:54:01.540Z] Time:          Tue Jun 25 2024 15:54:01 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-06-25T19:54:01.540Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-25T19:54:01.581Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-25T19:54:01.582Z] > authorizing via signed-in user (tcottle8@gmail.com)
+[debug] [2024-06-25T19:54:01.582Z] [iam] checking project bit-5ee21 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-06-25T19:54:01.583Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bit-5ee21:testIamPermissions [none]
+[debug] [2024-06-25T19:54:01.583Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bit-5ee21:testIamPermissions x-goog-quota-user=projects/bit-5ee21
+[debug] [2024-06-25T19:54:01.583Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bit-5ee21:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-25T19:54:01.836Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bit-5ee21:testIamPermissions 200
+[debug] [2024-06-25T19:54:01.836Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bit-5ee21:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-06-25T19:54:01.837Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bit-5ee21 [none]
+[debug] [2024-06-25T19:54:02.153Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bit-5ee21 200
+[debug] [2024-06-25T19:54:02.153Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bit-5ee21 {"projectId":"bit-5ee21","projectNumber":"578434836643","displayName":"8bit","name":"projects/bit-5ee21","resources":{"hostingSite":"bit-5ee21"},"state":"ACTIVE","etag":"1_c70bcea6-26dd-4132-afc5-a2f8577f6bc4"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-06-25T19:54:05.726Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bit-5ee21/sites/bit-5ee21 [none]
+[debug] [2024-06-25T19:54:06.202Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bit-5ee21/sites/bit-5ee21 200
+[debug] [2024-06-25T19:54:06.202Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bit-5ee21/sites/bit-5ee21 {"name":"projects/bit-5ee21/sites/bit-5ee21","defaultUrl":"https://bit-5ee21.web.app","type":"DEFAULT_SITE"}
+[info]   ▲ Next.js 15.0.0-rc.0
+
+[info]   - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/app/branding/page.tsx
+124:6  Warning: React Hook useEffect has a missing dependency: 'previousCombo'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./src/app/components/BrandGrid.jsx
+9:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/10) ...
+
+[info]    Generating static pages (2/10) 
+
+[info] -2.4677488657177555 22.999564615612712 13.986937983742784
+-13.138254846953714 -6.740298188207486 -6.503271390444434
+
+[info] ReferenceError: document is not defined
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:1:5565
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:391
+    at Array.map (<anonymous>)
+    at o (/Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:299)
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:553
+    at Array.map (<anonymous>)
+    at o (/Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:542)
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:553
+    at Array.map (<anonymous>)
+    at o (/Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:542) {
+  digest: '989032935'
+}
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+ReferenceError: document is not defined
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:1:5565
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:391
+    at Array.map (<anonymous>)
+    at o (/Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:299)
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:553
+    at Array.map (<anonymous>)
+    at o (/Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:542)
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:553
+    at Array.map (<anonymous>)
+    at o (/Users/tanner/Developer/Software/portfolio/.next/server/app/page.js:10:542)
+ReferenceError: document is not defined
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:1:7334
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:391
+    at Array.map (<anonymous>)
+    at l (/Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:299)
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:553
+    at Array.map (<anonymous>)
+    at l (/Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:542)
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:553
+    at Array.map (<anonymous>)
+    at l (/Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:542) {
+  digest: '4259993847'
+}
+
+Error occurred prerendering page "/comingsoon". Read more: https://nextjs.org/docs/messages/prerender-error
+
+ReferenceError: document is not defined
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:1:7334
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:391
+    at Array.map (<anonymous>)
+    at l (/Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:299)
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:553
+    at Array.map (<anonymous>)
+    at l (/Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:542)
+    at /Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:553
+    at Array.map (<anonymous>)
+    at l (/Users/tanner/Developer/Software/portfolio/.next/server/app/comingsoon/page.js:10:542)
+
+[info]    Generating static pages (4/10) 
+
+[info] 
+> Build error occurred
+
+[info] Error: Export encountered an error on /, exiting due to prerenderEarlyExit: true being set
+    at /Users/tanner/Developer/Software/portfolio/node_modules/next/dist/export/index.js:481:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Promise.all (index 8)
+    at async exportAppImpl (/Users/tanner/Developer/Software/portfolio/node_modules/next/dist/export/index.js:442:21)
+    at async /Users/tanner/Developer/Software/portfolio/node_modules/next/dist/export/index.js:625:16
+    at async Span.traceAsyncFn (/Users/tanner/Developer/Software/portfolio/node_modules/next/dist/trace/trace.js:157:20)
+    at async /Users/tanner/Developer/Software/portfolio/node_modules/next/dist/build/index.js:1690:42
+    at async Span.traceAsyncFn (/Users/tanner/Developer/Software/portfolio/node_modules/next/dist/trace/trace.js:157:20)
+    at async /Users/tanner/Developer/Software/portfolio/node_modules/next/dist/build/index.js:1548:17
+    at async Span.traceAsyncFn (/Users/tanner/Developer/Software/portfolio/node_modules/next/dist/trace/trace.js:157:20)
+
+[debug] [2024-06-25T19:54:14.136Z] Error: ENOENT: no such file or directory, open '/Users/tanner/Developer/Software/portfolio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
